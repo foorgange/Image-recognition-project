@@ -1,0 +1,28 @@
+video_input: "data/input.mp4"
+output_dir: "results/"
+model:
+  name: "yolov5"
+  weights: "weights/yolov5s.pt"
+  device: "cuda"  # 或 "cpu"
+  img_size: 640
+  confidence_threshold: 0.7
+  iou_threshold: 0.45
+  class_names_file: "config/coco_classes.txt"
+processing:
+  save_video: true
+  show_fps: true
+  display_window: true
+  save_frames: false
+  frame_save_interval: 30  # 每隔多少帧保存一次
+visualization:
+  draw_boxes: true
+  draw_labels: true
+  save_detection_images: true
+metrics:
+  enabled: true
+  save_report: true
+  report_format: "json"
+logging:
+  level: "INFO"
+  save_to_file: true
+  log_file: "logs/detection.log"

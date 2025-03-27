@@ -1,0 +1,20 @@
+project_root/
+├── config/
+├── data/
+├── logs/
+├── results/
+├── src/
+│   └── my_app/
+│       ├── detection/
+│       ├── models/
+│       │   ├── __init__.py
+│       │   ├── base_model.py
+│       │   └── yolo_model.py
+│       ├── reports/
+│       │   ├── __init__.py
+│       │   ├── visualization.py
+│       │   └── metrics.py
+│       ├── utils/
+│       └── tests/
+├── weights/
+└── main.py 
