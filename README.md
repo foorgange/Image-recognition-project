@@ -1,1 +1,0 @@
-# Image-recognition-project
